@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance controller</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+    <header>
+        <p class="Title-1">Finance controller</p>
+        <p class="Title-3">Don't waste your many</p>
+    </header>
+    <article>
+        <div class="block_2">
+            <p class="title-3">add your cost</p>
+            <div class="input_form">
+                <form>
+                    <label for="product_name" class="text">Name of product:</label>
+                    <input type="text" id="product_name" name="product_name"><br>
+                    <label for="product_cost" class="text">Cost of product:</label>
+                    <input type="number" id="product_cost" name="product_cost"><br>
+                    <label for="product_labels" class="text">Some labels for product:</label>
+                    <input type="text" id="product_labels" name="product_labels"><br>
+                    <br>
+                    <input type="button" value="Submit"  onclick="addCost()">
+                </form>
+                <br>
+                <p class="text">separate labels by using ';'</p>
+            </div>
+        </div>
+        <div class="block_2">
+            <p class="text">your costs</p>
+            <div class="output_block">
+                <table id="costs_list">
+                    <tr>
+                        <th>Name</th>
+                        <th>Cost</th>
+                        <th>Labels</th>
+                    </tr>
+                </table>
+                <br>
+                <input type="button" value="Clear All Costs"  onclick="clearCosts()">
+            </div>
+        </div>
+    </article>
+    <footer>
+        <p class="Title-1">By Olena Vytoshko</p>
+        <p class="text">2022</p>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
